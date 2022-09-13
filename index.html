@@ -25,7 +25,7 @@
         id="search-field"
         placeholder="Search Your Phone"
       />
-      <button id="btn-search" class="btn btn-primary">Search</button>
+      <button id="btn-search" class="btn btn-primary mb-5 mt-2">Search</button>
 
       <div id="no-found-messege" class="mt-4 d-none">
         <h3 class="text-warning">No Phone Found. Please try a new search</h3>
@@ -53,13 +53,13 @@
           class="modal fade"
           id="exampleModal"
           tabindex="-1"
-          aria-labelledby="exampleModalLabel"
+          aria-labelledby="phoneDetaleModalLabel"
           aria-hidden="true"
         >
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="phoneDetaleModalLabel"></h5>
                 <button
                   type="button"
                   class="btn-close"
@@ -67,7 +67,7 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body">...</div>
+              <div id="phone-details" class="modal-body"></div>
               <div class="modal-footer">
                 <button
                   type="button"

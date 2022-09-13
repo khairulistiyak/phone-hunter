@@ -84,8 +84,27 @@ const lodePhoneDateals = async (id) => {
 };
 // disply phone ditaile modal
 
-const displyPhoneDeatails = (phone) => {};
+const displyPhoneDeatails = (phone) => {
+  const modalTitle = document.getElementById("phoneDetaleModalLabel");
+  modalTitle.innerText = phone.name;
+  const phoneDeatils = document.getElementById("phone-details");
+  phoneDeatils.innerHTML = `
+  
+  <p> <b>Name:</b> ${phone.name}</p>
+  <p> <b>id:</b> ${phone.slug}</p>
+  <p> <b>Release Date:</b> ${
+    phone.releaseDate ? phone.releaseDate : "No Release Date"
+  }</p>
+  <p> <b>chipSet:</b> ${phone.mainFeatures.chipSet}</p>
+  <p> <b>Storage:</b> ${phone.mainFeatures.storage}</p>
+  <p> <b>Memory:</b> ${phone.mainFeatures.memory}</p>
+  <p> <b>Display:</b> ${phone.mainFeatures.displaySize}</p>
+  
+  `;
 
-lodePhone();
+  console.log(phone);
+};
+
+lodePhone("iphone");
 
 // show all mobile
