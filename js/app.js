@@ -95,7 +95,9 @@ const displyPhoneDeatails = (phone) => {
   <p> <b>Release Date:</b> ${
     phone.releaseDate ? phone.releaseDate : "No Release Date"
   }</p>
-  <p> <b>chipSet:</b> ${phone.mainFeatures.chipSet}</p>
+  <p> <b>chipSet:</b> ${
+    phone.mainFeatures ? phone.mainFeatures.chipSet : " No chipset"
+  } </p>
   <p> <b>Storage:</b> ${phone.mainFeatures.storage}</p>
   <p> <b>Memory:</b> ${phone.mainFeatures.memory}</p>
   <p> <b>Display:</b> ${phone.mainFeatures.displaySize}</p>
